@@ -21,6 +21,13 @@ A complete web-based Alumni Management System for educational institutions to ma
 - 📎 **Export to Excel** - Download alumni data as XLS
 - ⏰ **Real-time Clock** - Live time display on dashboard
 - 🌟 **Alumni of the Month** - Featured alumni section
+  
+- 🚀 Enterprise-Level Upgrades
+🔔 Interactive Notification System - Real-time bell dropdown with clickable alerts (auto-redirects to specific data)
+📊 Employment Analytics - Interactive Pie Chart showing Employed vs Unemployed alumni ratio
+📧 Bulk Email Module - Simulated mass email system with activity logging
+📈 Enrollment Trend Graph - Line chart displaying alumni admission trends over the years
+💬 Alumni Success Stories - Community engagement feed where alumni share achievements
 
 ### Technical Features
 - 🔐 **Secure** - SQL injection prevention, XSS protection
