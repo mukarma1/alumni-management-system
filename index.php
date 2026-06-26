@@ -218,11 +218,12 @@ $alumni_list = $conn->query("SELECT id, full_name FROM alumni ORDER BY full_name
         th { background: #f8f9fa; font-weight: 600; color: #555; }
         body.dark-mode th { background: #1a1a3e; color: #ccc; }
         .profile-img { width: 45px; height: 45px; border-radius: 50%; object-fit: cover; }
-        .edit-btn, .delete-btn, .whatsapp-btn, .email-btn { padding: 6px 12px; border: none; border-radius: 5px; cursor: pointer; margin: 2px; }
+        .edit-btn, .delete-btn, .whatsapp-btn, .email-btn, .idcard-btn { padding: 6px 12px; border: none; border-radius: 5px; cursor: pointer; margin: 2px; font-size: 12px;}
         .edit-btn { background: #ffc107; color: #333; }
         .delete-btn { background: #dc3545; color: white; }
         .whatsapp-btn { background: #25D366; color: white; }
         .email-btn { background: #007bff; color: white; }
+        .idcard-btn { background: #6c5ce7; color: white; }
         
         .modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); justify-content: center; align-items: center; z-index: 1000; }
         .modal-content { background: white; padding: 30px; border-radius: 20px; width: 90%; max-width: 500px; }
@@ -449,6 +450,11 @@ $alumni_list = $conn->query("SELECT id, full_name FROM alumni ORDER BY full_name
                                 </a>
                                 <a href="mailto:<?php echo $row['email']; ?>">
                                     <button class="email-btn"><i class="fas fa-envelope"></i></button>
+                                </a>
+                                
+                                <!-- ✅ NEW ID CARD BUTTON ADDED HERE -->
+                                <a href="id_card.php?id=<?php echo $row['id']; ?>" target="_blank">
+                                    <button class="idcard-btn"><i class="fas fa-id-card"></i> Card</button>
                                 </a>
                             </td>
                         </tr>
